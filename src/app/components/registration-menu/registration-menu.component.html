@@ -1,0 +1,11 @@
+<div class="reg-div" align="center">
+  <div *ngIf="this.isInvalid">
+    <h1>Incorect password or username</h1>
+  </div>
+
+  <form (submit)="handleLogin()">
+    <input type="text" [(ngModel)]="username" name="name" class="form-control"><br>
+    <input type="password" [(ngModel)]="password" name="password" class="form-control"><br>
+    <button class="btn btn-success" type="submit">Добавить</button>
+  </form>
+</div>

@@ -1,0 +1,63 @@
+.top-bar {
+  position: absolute;
+  width: 523px;
+  height: 100%;
+
+  background: #5041BC;
+  border-radius: 40px;
+}
+.top-bar-text {
+  position: absolute;
+  width: 82px;
+  height: 48px;
+
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  /* or 120% */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: #FAFAFA;
+  left: 0;
+  top: 0;
+
+}
+.line {
+  width: 45%;
+  height: 0;
+
+  border: 1px solid #8A7DD0;
+}
+
+.button {
+  margin-top: 70px;
+  width: 240px;
+  height: 46px;
+
+
+  background: transparent;
+  color: #FFFFFF;
+}
+.button.selected{
+  margin-top: 70px;
+  width: 240px;
+  height: 46px;
+  border-radius: 20px;
+
+  background: #FFFFFF;
+  color: #5041BC;
+}
+.menu-text-un-chosen {
+  width: 100%;
+  height: 20px;
+
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 46px;
+}

@@ -1,0 +1,26 @@
+<div class="top-bar">
+<!-- Boris design -->
+  <div>
+    <svg style="margin-left: 20px; margin-top: 20px" width="85" height="86" viewBox="0 0 77 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M38.1878 75.3756C58.726 75.3756 75.3756 58.726 75.3756 38.1878C75.3756 17.6495 58.726 1 38.1878 1C17.6495 1 1 17.6495 1 38.1878C1 58.726 17.6495 75.3756 38.1878 75.3756Z" stroke="#FAFAFA" stroke-width="2"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.36255 38.6676L38.6676 2.36251L74.9727 38.6676L38.6676 74.9727L2.36255 38.6676Z" stroke="#FAFAFA" stroke-width="2"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M59.4977 23.5634H17.7136L38.6056 74.9577L59.4977 23.5634Z" stroke="#FAFAFA" stroke-width="2"/>
+    </svg>
+    <p style="margin-left: 130px; margin-top: 40px" class="top-bar-text">
+      {{title | uppercase}}
+    </p>
+  </div>
+
+  <div class="line" style="margin-left: 6%; margin-top: 10px;"></div>
+
+<!-- Buttons -->
+  <div style="margin-top: 100px; margin-left: 30px">
+
+    <div *ngFor="let button of Buttons" class="button" [class.selected]="this.selectedId == button.text"
+         (click)="change(button.text)">
+      <p style="margin-left: 40px" class="menu-text-un-chosen">{{button.text}}</p>
+    </div>
+
+  </div>
+
+</div>

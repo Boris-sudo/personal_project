@@ -1,0 +1,16 @@
+.main {
+  padding: 0;
+  position: absolute;
+  width: 82%;
+  height: 100%;
+
+  background: #FFFFFF;
+  border-radius: 40px 0 0 40px;
+  left: 18%;
+}
+.app.selected {
+  display: block;
+}
+.app {
+  display: none;
+}
